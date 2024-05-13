@@ -278,8 +278,7 @@ export default function Hero() {
 
           <div className="flex items-center justify-center">
             <motion.h1
-              className="text-white font-thin sm:mt-20 mt-5 sm:mb-0 mb-[-15vw] text-md uppercase sm:p-4 rounded-md text-center bg-gradient-to-r sm:text-xl sm:w-[35vw] xxs:h-[7vh] xxs:w-[60vw] sm:h-[10vh] from-indigo-600 to-sky-400 p-3 font-poppins"
-              initial={{ opacity: 0 }}
+              className="text-white font-bold sm:mt-10 mt-5 sm:mb-0 mb-[-15vw] text-md uppercase sm:p-4 rounded-md text-center bg-gradient-to-r xs:text-base md:text-xl md:w-[21vw] sm:h-[10.25vh] md:h-[8.25vh]  from-indigo-600 to-sky-400 p-3 font-poppins"initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{
                 delay: 0.2,
@@ -287,14 +286,14 @@ export default function Hero() {
               }}
               id="techClub"
             >
-              Council Members
+              Club Heads
             </motion.h1>
           </div>
         </ScrollReveal>
 
         <div
           id="council"
-          className="flex mt-30 flex-wrap place-content-center gap-2  "
+          className="flex mt-30 flex-wrap place-content-center gap-0.5  "
         >
           {clubArr.map((item, index) => (
             <div
@@ -303,7 +302,7 @@ export default function Hero() {
               md:w-[35vh] md:h-[40vw] 
               lg:w-[50vh] lg:h-[30vw] 
               lg:mx-[0vh]
-              lg:my-[2vh]
+              lg:my-[-3vh]
               md:mx-[2vw]
               md:my-[1vw]
               z-10 bg-transparent border-black pt-20 
@@ -386,7 +385,7 @@ export default function Hero() {
                       </a>
 
                       <a href={item.club_insta} target="_blank">
-                        <Image
+                        <Image 
                           src={insta_icon}
                           unoptimized
                           alt="Insta Icon"
